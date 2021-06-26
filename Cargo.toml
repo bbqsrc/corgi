@@ -12,8 +12,16 @@ path = "./src/main.rs"
 required-features = ["cli"]
 
 [dependencies]
+anyhow = "1.0.41"
+cargo_metadata = "0.13.1"
 gumdrop = "0.8.0"
-pathos = "0.3.0-pre.3"
+indexmap = { version = "1.6.2", features = ["serde"] }
+pathos = "0.3.0-pre.4"
+semver = { version = "1.0.3", features = ["serde"] }
+serde = { version = "1.0.126", features = ["derive"] }
+toml = "0.5.8"
+tracing = "0.1.26"
+tracing-subscriber = "0.2.19"
 
 [features]
 default = ["cli"]
